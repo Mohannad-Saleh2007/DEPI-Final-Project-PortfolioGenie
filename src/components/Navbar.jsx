@@ -17,7 +17,7 @@ const CustomNavbar = ({ theme, onToggle }) => {
             {theme === "light" ? "Dark" : "Light"}
           </Button>
 
-          <Link to="/building" className="btn btn-primary btn-sm">Start building</Link>
+          <Link to="/builder" className="btn btn-primary btn-sm">Start building</Link>
 
         </Container>
       </Navbar>
