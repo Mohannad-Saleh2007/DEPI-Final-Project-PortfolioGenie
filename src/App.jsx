@@ -19,9 +19,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="pg-app">
-
-          <Navbar theme={theme} onToggle={() => setTheme(theme === 'light' ? 'dark' : 'light')} />
+        <div className="pg-app" data-bs-theme={theme}>
+          <Navbar theme={theme} onToggle={() => setTheme(theme === "light" ? "dark" : "light")} />
 
           <Routes>
             <Route path="/" element={<LandingPage />} />

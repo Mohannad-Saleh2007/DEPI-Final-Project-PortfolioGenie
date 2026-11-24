@@ -1,0 +1,93 @@
+/* :root{
+    
+} */
+
+.pg-app[data-bs-theme="light"] {
+  background: radial-gradient(circle at top right, #eef2ff 0%, #f8fafc 45%, #ffffff 100%);
+  color: #0f172a;
+}
+
+.pg-app[data-bs-theme="dark"] {
+  background: radial-gradient(circle at top right, #1e1b4b 0%, #0b1120 50%, #090d16 100%);
+  color: #f8fafc;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.btn {
+  transition: transform 0.2s ease, background-color 0.2s ease,
+              color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#hero .btn {
+  padding: 0.65rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  border-width: 1.5px;
+}
+
+#hero .btn:hover {
+  transform: translateY(-2px);
+}
+
+#hero .btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #6366f1;
+  --bs-btn-border-color: #6366f1;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #4f46e5;
+  --bs-btn-hover-border-color: #4f46e5;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #4338ca;
+  --bs-btn-active-border-color: #4338ca;
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.3);
+}
+
+#hero .btn-outline-secondary {
+  --bs-btn-color: currentColor;
+  --bs-btn-border-color: currentColor;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #6366f1;
+  --bs-btn-hover-border-color: #6366f1;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #4f46e5;
+  --bs-btn-active-border-color: #4f46e5;
+}
+
+.pg-nav-cta {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #6366f1;
+  --bs-btn-border-color: #6366f1;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #4f46e5;
+  --bs-btn-hover-border-color: #4f46e5;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #4338ca;
+  --bs-btn-active-border-color: #4338ca;
+
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.pg-nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(99, 102, 241, 0.4);
+}
+
+@media (max-width: 767.98px) {
+  .pg-nav-cta {
+    width: 100%;
+    text-align: center;
+  }
+}
